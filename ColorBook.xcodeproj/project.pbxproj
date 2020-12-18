@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		293EDF67258C377500FB9DAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293EDF66258C377500FB9DAE /* ContentView.swift */; };
 		293EDF69258C377600FB9DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293EDF68258C377600FB9DAE /* Assets.xcassets */; };
 		293EDF6C258C377600FB9DAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293EDF6B258C377600FB9DAE /* Preview Assets.xcassets */; };
+		293EDF76258C378600FB9DAE /* xColor in Frameworks */ = {isa = PBXBuildFile; productRef = 293EDF75258C378600FB9DAE /* xColor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293EDF76258C378600FB9DAE /* xColor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = ColorBook;
+			packageProductDependencies = (
+				293EDF75258C378600FB9DAE /* xColor */,
+			);
 			productName = ColorBook;
 			productReference = 293EDF61258C377500FB9DAE /* ColorBook.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 293EDF58258C377500FB9DAE;
+			packageReferences = (
+				293EDF74258C378600FB9DAE /* XCRemoteSwiftPackageReference "xColor" */,
+			);
 			productRefGroup = 293EDF62258C377500FB9DAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		293EDF74258C378600FB9DAE /* XCRemoteSwiftPackageReference "xColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/xColor";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		293EDF75258C378600FB9DAE /* xColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 293EDF74258C378600FB9DAE /* XCRemoteSwiftPackageReference "xColor" */;
+			productName = xColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 293EDF59258C377500FB9DAE /* Project object */;
 }

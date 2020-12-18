@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "xColor",
+        "repositoryURL": "https://github.com/0xLeif/xColor",
+        "state": {
+          "branch": "main",
+          "revision": "af32e6050a408b3ec0d5ee2746068acefc10458d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
